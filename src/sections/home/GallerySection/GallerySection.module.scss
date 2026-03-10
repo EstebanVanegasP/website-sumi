@@ -1,0 +1,25 @@
+.section {
+  padding: var(--space-7) 0;
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.item {
+  min-height: 180px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, #ebe2d7, #d9e2d8);
+  display: grid;
+  place-items: center;
+  color: var(--color-text-soft);
+  box-shadow: var(--shadow-soft);
+}
+
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

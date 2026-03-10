@@ -1,0 +1,53 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition:
+    transform var(--transition-base),
+    background-color var(--transition-base),
+    color var(--transition-base),
+    box-shadow var(--transition-base),
+    border-color var(--transition-base);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.primary:hover {
+  box-shadow: var(--shadow-soft);
+}
+
+.secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.secondary:hover {
+  background-color: rgba(85, 107, 93, 0.06);
+}
+
+.whatsapp {
+  background-color: var(--color-whatsapp);
+  color: var(--color-white);
+}
+
+.whatsapp:hover {
+  box-shadow: var(--shadow-soft);
+}
+
+.ghost {
+  color: var(--color-text);
+  background-color: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(6px);
+}

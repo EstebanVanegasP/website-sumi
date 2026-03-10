@@ -1,0 +1,29 @@
+.section {
+  padding: var(--space-7) 0;
+  background-color: rgba(85, 107, 93, 0.05);
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+}
+
+.card h3 {
+  margin-bottom: var(--space-2);
+  color: var(--color-primary);
+}
+
+.cta {
+  margin-top: var(--space-5);
+  display: flex;
+  justify-content: center;
+}

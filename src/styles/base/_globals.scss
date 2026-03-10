@@ -1,0 +1,43 @@
+@use '../abstracts/variables';
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+}
+
+p {
+  color: var(--color-text-soft);
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.container {
+  width: min(100% - 2rem, var(--container-width));
+  margin-inline: auto;
+}
